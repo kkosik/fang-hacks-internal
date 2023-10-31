@@ -11,8 +11,8 @@ PSK="YOURPSK"
 NTPD="time.google.com"
 
 # Your current timezone. Complete list:
-# http://svn.fonosfera.org/fon-ng/trunk/luci/modules/admin-fon/root/etc/timezones.db
-TZ="EST-10EST,M10.1.0,M4.1.0/3"
+# https://web.archive.org/web/20180627151411/http://svn.fonosfera.org/fon-ng/trunk/luci/modules/admin-fon/root/etc/timezones.db
+TZ="EST5EDT,M3.2.0,M11.1.0"
 
 # Arguments to be passed to snx_isp_ctl for image manipulation. Complete list:
 # https://github.com/samtap/fang-hacks/wiki/Controlling-the-text-overlay
@@ -21,6 +21,9 @@ SNXISPCTLARGS="--mfset-mode 0"
 # Arguments to be passed to snx_rtsp_server for stream manipulation. Complete list:
 # https://github.com/samtap/fang-hacks/wiki/snx_rtsp_server-help-text
 SNXRTSPSERVERARGS="-W 1920 -H 1080 -Q 10 -b 2048 -F 10"
+
+# Disable IR?
+DISABLEIR="false"
 
 # Chuck Norris mode -- Force initialise. Useful if XiaoFang doesn't seem to boot
 CHUCKNORRIS="false"
